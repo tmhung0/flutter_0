@@ -41,7 +41,7 @@ class TutorialHome extends StatelessWidget {
           child: Column(
             mainAxisAlignment: MainAxisAlignment.spaceAround,
             children: [
-              Container(
+              SizedBox(
                 width: 100,
                 height: 70,
                 child: Image.asset('assets/images/3.png'),
@@ -60,22 +60,23 @@ class TutorialHome extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       IconButton(
-                          onPressed: () {}, icon: Icon(Icons.arrow_back_ios)),
-                      Container(
+                          onPressed: () {},
+                          icon: const Icon(Icons.arrow_back_ios)),
+                      SizedBox(
                         width: 50,
                         child: Image.asset('assets/images/1.jpg'),
                       ),
-                      Container(
+                      SizedBox(
                         width: 100,
                         child: Image.asset('assets/images/2.jpg'),
                       ),
-                      Container(
+                      SizedBox(
                         width: 50,
                         child: Image.asset('assets/images/1.jpg'),
                       ),
                       IconButton(
                           onPressed: () {},
-                          icon: Icon(Icons.arrow_forward_ios)),
+                          icon: const Icon(Icons.arrow_forward_ios)),
                     ]),
               ),
               Padding(
