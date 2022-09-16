@@ -30,7 +30,6 @@ class _SecondRouteState extends State<SecondRoute> {
       ),
       body: Column(
         children: [
-          Image.asset('assets/images/3.png'),
           Column(
             crossAxisAlignment: (move == 1)
                 ? CrossAxisAlignment.start
@@ -42,6 +41,10 @@ class _SecondRouteState extends State<SecondRoute> {
                 width: 180,
                 child: Column(
                   children: [
+                    SizedBox(
+                      width: 50,
+                      child: Image.asset('assets/images/3.png'),
+                    ),
                     Container(
                       margin: const EdgeInsets.all(20),
                       child: Row(children: [
